@@ -5,6 +5,8 @@ use aya_log::BpfLogger;
 use clap::Parser;
 use log::{debug, info, warn};
 use tokio::signal;
+use core::net::Ipv4Addr;
+use aya::maps::HashMap;
 
 #[derive(Debug, Parser)]
 struct Opt {
